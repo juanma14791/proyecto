@@ -8,14 +8,12 @@ padding: 0;
         border: 2px solid black;
         margin: 20px;
         padding: 20px;
-
     }
 .menuImg{
     display: flex;
     align-items:center;
     justify-content:space-evenly;
     flex-wrap: wrap;
-
 }
 .imagen {
     display: inline-block;
@@ -41,7 +39,6 @@ padding: 0;
     grid-area:casa1 ;
     width: 380px;
     height: auto;
-
 }
 .casa2{
     grid-area:casa2 ;
@@ -81,8 +78,6 @@ footer {
 .menu{
     list-style: none
 }
-
-/*aplique flex box*/
 .menu {
     display: flex;
     justify-content: space-evenly;
@@ -153,7 +148,6 @@ section h2{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 .backg{
     background-color: #ffcfdf;
