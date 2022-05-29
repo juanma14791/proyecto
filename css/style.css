@@ -15,7 +15,7 @@ padding: 0;
     align-items:center;
     justify-content:space-evenly;
     flex-wrap: wrap;
-    
+
 }
 .imagen {
     display: inline-block;
@@ -26,6 +26,37 @@ padding: 0;
     background-color: aliceblue;
     padding: 10px;
     margin: 5px;
+}
+.menuImg1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "casa1 casa2 casa3"
+    "casa4 casa4 casa4";
+    align-items: center;
+    justify-content: space-evenly;
+}
+.casa1{
+    grid-area:casa1 ;
+    width: 380px;
+    height: auto;
+
+}
+.casa2{
+    grid-area:casa2 ;
+    width: 380px;
+    height: auto;
+}
+.casa3{
+    grid-area:casa3 ;
+    width: 380px;
+    height: auto;
+}
+.casa4{
+    grid-area:casa4 ;
+    width: 380px;
+    height: auto;
 }
 .maquetas{
     display: flex;
@@ -45,26 +76,18 @@ padding: 0;
 footer {
     background-color: aquamarine;
     height: 200px;
-    overflow: scroll;   
-} 
+    overflow: scroll;
+}
 .menu{
     list-style: none
 }
-/* .menu{
-    display: grid;
-    grid-template-columns: repeat(4 1fr);
-    grid-template-areas:
-     ;
-}
-.menu_item .inicio{
-    background-color: violet;
-}       */
+
 /*aplique flex box*/
-.menu { 
+.menu {
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(74, 139, 123);
-    text-decoration: none;  
+    text-decoration: none;
     margin: 20px;
     padding: 5px;
 
@@ -74,31 +97,31 @@ footer {
     background-color: rgb(5, 8, 8);
     color: #fff;
     padding: 10px 30px;
-    text-decoration: none; 
+    text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 17px; 
-}  
+    font-size: 17px;
+    border-radius: 15px;
+}
 
 .menu_item:hover {
     background: rgb(45, 115, 143);
+    transform:scale(1.2);
 }
 .link {
     text-decoration: none;
-    
+
     margin: 20px;
 }
 .link {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 22px;
-    
 }
 section h2{
     text-align: center;
     text-decoration: none;
-   
-} 
+}
 .subTitulos {
     margin: 5px;
     padding: 10px;
@@ -106,8 +129,7 @@ section h2{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     text-align: center;
-   
-} 
+}
 .bg {
     background-image: url(../assets/img/los-estilos-de-arquitectura-que-mas-triunfan-en-la-actualidad.jpg);
     background-attachment: fixed;
@@ -115,6 +137,10 @@ section h2{
     background-repeat: no-repeat;
     background-size: cover;
 
+}
+.backg{
+    background-color: #ffcfdf;
+    background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
 }
 .quienesSomos__texto{
     margin: 10px;
@@ -136,9 +162,29 @@ i {
         background-color: white;
     }
     .menu_item{
-        font-size: 15px;
+        font-size: 12px;
     }
-
+    .menuImg1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+        "casa1 casa2"
+        "casa3 casa4";
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .imagen {
+        display: inline-block;
+        align-items: center;
+        width: 280px;
+        height: auto;
+        object-fit: contain;
+        background-color: aliceblue;
+        padding: 10px;
+        margin: 5px;
+    }
+}
 @media (max-width: 320px){
     nav .menu{
         flex-direction: column;
@@ -155,7 +201,26 @@ i {
     .titulo{
         font-size: 30px;
     }
-}
-
-
+    .menuImg1{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        "casa1"
+        "casa2"
+        "casa3"
+        "casa4";
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .imagen {
+        display: inline-block;
+        align-items: center;
+        width: 280px;
+        height: auto;
+        object-fit: contain;
+        background-color: aliceblue;
+        padding: 10px;
+        margin: 5px;
+    }
 }
