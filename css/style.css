@@ -103,7 +103,25 @@ footer {
     font-size: 17px;
     border-radius: 15px;
 }
-
+.imgSlide{
+    /* width: 380px; */
+    height: 500px;
+    object-fit: contain;
+    /* justify-content: center;
+    align-items: center;
+    align-content: center; */
+}
+.carousel_itemJm{
+    margin: 0 auto;
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    /* margin-right: -100%; */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .6s ease-in-out;
+}
 .menu_item:hover {
     background: rgb(45, 115, 143);
     transform:scale(1.2);
