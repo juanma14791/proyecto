@@ -1,0 +1,241 @@
+@import"./componentes/videos";
+@import"./base/maps";
+*{margin: 0;
+    padding: 0;
+        };
+    .titulo {font-size: 50px;
+            text-align: center;
+            
+            font-weight: 900;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+            };
+    .menuImg{
+        display: flex;
+        align-items:center;
+        justify-content:space-evenly;
+        flex-wrap: wrap;
+    
+    };
+    .imagen {
+        display: inline-block;
+        align-items: center;
+        width: 380px;
+        height: auto;
+        object-fit: contain;
+        background-color: aliceblue;
+        padding: 10px;
+        margin: 5px;
+    }
+    .menuImg1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+        "casa1 casa2 casa3"
+        "casa4 casa4 casa4";
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .casa1{
+        grid-area:casa1 ;
+        width: 380px;
+        height: auto;
+    
+    }
+    .casa2{
+        grid-area:casa2 ;
+        width: 380px;
+        height: auto;
+    }
+    .casa3{
+        grid-area:casa3 ;
+        width: 380px;
+        height: auto;
+    }
+    .casa4{
+        grid-area:casa4 ;
+        width: 380px;
+        height: auto;
+    }
+    .maquetas{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .video{
+        display: inline-block;
+        width: 500px;
+        align-items: center;
+        object-fit: contain;
+        background-color: aliceblue;
+        padding: 10px;
+        margin: 5px;
+    }
+    .video:hover {
+        transform: scale(1.1);
+    }
+    footer {
+        background-color: aquamarine;
+        height: 200px;
+        overflow: scroll;
+    }
+    .menu{
+        list-style: none
+    }
+    
+    /*aplique flex box*/
+    .menu {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgb(74, 139, 123);
+        text-decoration: none;
+        margin: 20px;
+        padding: 5px;
+    
+    }
+    .menu_item {
+        display: inline-block;
+        background-color: rgb(5, 8, 8);
+        color: #fff;
+        padding: 10px 30px;
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 17px;
+        border-radius: 15px;
+    }
+    .imgSlide{
+        /* width: 380px; */
+        height: 500px;
+        object-fit: contain;
+        width: 100%;
+        margin: auto;
+        /* justify-content: center;
+        align-items: center;
+        align-content: center; */
+    }
+    .carousel_itemJm{
+        margin: 0 auto;
+        position: relative;
+        display: none;
+        float: left;
+        width: 100%;
+        /* margin-right: -100%; */
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        transition: transform .6s ease-in-out;
+    }
+    .menu_item:hover {
+        background: rgb(45, 115, 143);
+        transform:scale(1.2);
+    }
+    .link {
+        text-decoration: none;
+        margin: 20px;
+    }
+    .link {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+    }
+    section h2{
+        text-align: center;
+        text-decoration: none;
+    }
+     
+    .bg {
+        background-image: url(../assets/img/los-estilos-de-arquitectura-que-mas-triunfan-en-la-actualidad.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    }
+    .backg{
+        background-color: #ffcfdf;
+        background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
+    }
+    .quienesSomos__texto{
+        margin: 10px;
+    }
+    i {
+        color: green;
+        font-size: 50px;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+    .final {
+        border:2px solid black;
+        height: 40px;
+        overflow: auto;
+    }
+    @media (max-width: 600px){
+        nav .menu{
+            background-color: white;
+        }
+        .menu_item{
+            font-size: 12px;
+        }
+        .menuImg1{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+            "casa1 casa2"
+            "casa3 casa4";
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .imagen {
+            display: inline-block;
+            align-items: center;
+            width: 280px;
+            height: auto;
+            object-fit: contain;
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 5px;
+        }
+    }
+    @media (max-width: 320px){
+        nav .menu{
+            flex-direction: column;
+            background-color: transparent;
+        }
+        .menu_item{
+            background-color: lightblue;
+            color: black;
+            font-weight: 700;
+        }
+        .menu_item:hover{
+            background-color: blue;
+        }
+        .titulo{
+            font-size: 30px;
+        }
+        .menuImg1{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas:
+            "casa1"
+            "casa2"
+            "casa3"
+            "casa4";
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .imagen {
+            display: inline-block;
+            align-items: center;
+            width: 280px;
+            height: auto;
+            object-fit: contain;
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 5px;
+        };
+    };
