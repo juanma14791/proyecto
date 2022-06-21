@@ -9,8 +9,84 @@
 
 .icon {
   width: 50px;
+  color: blue;
 }
 
+i {
+  color: green;
+  font-size: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+.final {
+  border: 2px solid black;
+  height: 40px;
+  overflow: auto;
+}
+
+@media (max-width: 600px) {
+  nav .menu {
+    background-color: white;
+  }
+  .menu_item {
+    font-size: 12px;
+  }
+  .menuImg1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "casa1 casa2" "casa3 casa4";
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .imagen {
+    display: inline-block;
+    align-items: center;
+    width: 280px;
+    height: auto;
+    object-fit: contain;
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 5px;
+  }
+}
+@media (max-width: 320px) {
+  nav .menu {
+    flex-direction: column;
+    background-color: transparent;
+  }
+  .menu_item {
+    background-color: lightblue;
+    color: black;
+    font-weight: 700;
+  }
+  .menu_item:hover {
+    background-color: blue;
+  }
+  .titulo {
+    font-size: 30px;
+  }
+  .menuImg1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "casa1" "casa2" "casa3" "casa4";
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .imagen {
+    display: inline-block;
+    align-items: center;
+    width: 280px;
+    height: auto;
+    object-fit: contain;
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 5px;
+  }
+}
 .imagen {
   display: inline-block;
   align-items: center;
@@ -208,6 +284,11 @@ section h2 {
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+
+.menu_item:hover {
+  background: rgb(45, 115, 143);
+  transform: scale(1.2);
 }
 
 * {

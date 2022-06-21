@@ -38,3 +38,7 @@
     justify-content:space-evenly;
     flex-wrap: wrap;
 }
+.menu_item:hover {
+    background: rgb(45, 115, 143);
+    transform:scale(1.2);
+}
