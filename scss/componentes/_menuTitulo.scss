@@ -1,0 +1,40 @@
+.titulo {
+    @extend %titulo;
+}
+.menu {
+    @extend %menu;
+}
+.menu_item{
+    @extend %menuItem;
+}
+.cards{
+    @extend %displayCards;
+}
+.alin_carta{
+    @extend %alineacionCarta;
+
+}
+.boton{
+    @extend %boton;
+}
+.btnCard{
+    background-color: rgb(74, 139, 123);
+    display: flex;
+    justify-content: space-evenly;
+    @extend %menuItem;
+}
+.subTitulo{
+    font-size: 45px;
+}
+.bg{
+    @extend %bg;
+}
+.link{
+    @extend %link;
+}
+.pq{
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}

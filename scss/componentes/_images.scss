@@ -1,0 +1,78 @@
+.menuImg {
+    @extend %display;
+}
+.imagen {
+    display: inline-block;
+    align-items: center;
+    width: 380px;
+    height: auto;
+    object-fit: contain;
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 5px;
+}
+
+.menuImg{
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.menuImg1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "casa1 casa2 casa3"
+    "casa4 casa4 casa4";
+    align-items: center;
+    justify-content: space-evenly;
+}
+.casa1{
+    grid-area:casa1 ;
+    width: 380px;
+    height: auto;
+
+}
+.casa2{
+    grid-area:casa2 ;
+    width: 380px;
+    height: auto;
+}
+.casa3{
+    grid-area:casa3 ;
+    width: 380px;
+    height: auto;
+}
+.casa4{
+    grid-area:casa4 ;
+    width: 380px;
+    height: auto;
+}
+.imgSlide{
+    /* width: 380px; */
+    height: 500px;
+    object-fit: contain;
+    width: 100%;
+    margin: auto;
+    /* justify-content: center;
+    align-items: center;
+    align-content: center; */
+}
+.carousel_itemJm{
+    margin: 0 auto;
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    /* margin-right: -100%; */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .6s ease-in-out;
+}
+section h2{
+    text-align: center;
+    text-decoration: none;
+}

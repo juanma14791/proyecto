@@ -1,0 +1,70 @@
+%display {
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+%bg{
+    background-image: url(../assets/img/los-estilos-de-arquitectura-que-mas-triunfan-en-la-actualidad.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+%displayCards {
+    background-color: aliceblue;
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    justify-items: center;
+    flex-wrap:wrap;
+}
+%alineacionCarta{
+    text-align: center;
+}
+%titulo {
+        font-size: 50px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+}
+%boton{
+    color: #fff;
+    background-color:  rgb(74, 139, 123);
+    border-color:  rgb(74, 139, 123);
+}
+%btnCard {
+    justify-content: space-evenly;
+}
+%menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(74, 139, 123);
+    text-decoration: none;
+    margin: 20px;
+    padding: 5px;
+}
+
+%menuItem{
+    display: inline-block;
+    background-color: rgb(5, 8, 8);
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    border-radius: 15px;
+}
+%link{
+    text-decoration: none;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+}

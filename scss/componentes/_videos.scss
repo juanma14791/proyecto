@@ -1,10 +1,5 @@
-
-
 .maquetas{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    @extend %display;
 }
 .video{
     display: inline-block;
