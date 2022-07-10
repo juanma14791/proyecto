@@ -20,8 +20,12 @@ i {
 }
 .final {
     border:2px solid black;
-    height: 40px;
-    overflow: auto;
+    height: 60px;
+    
+}
+.footerContacto{
+    list-style-type: none;
+    text-decoration: none;
 }
 @media (max-width: 600px){
     nav .menu{
@@ -51,7 +55,7 @@ i {
         margin: 5px;
     }
 }
-@media (max-width: 320px){
+@media (max-width: 420px){
     nav .menu{
         flex-direction: column;
         background-color: transparent;
@@ -80,7 +84,7 @@ i {
         justify-content: space-evenly;
     }
     .imagen {
-        display: inline-block;
+        display: flex;
         align-items: center;
         width: 280px;
         height: auto;
